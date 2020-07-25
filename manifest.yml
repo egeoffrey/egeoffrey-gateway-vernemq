@@ -1,0 +1,21 @@
+branch: master
+container_config:
+  ports:
+  - 443:8080
+  - 1883:1883
+  - 8883:8883
+  - 8888:8888
+  volumes:
+  - ./data/gateway_cloud/data:/vernemq/data
+  - ./data/gateway_cloud/logs:/vernemq/log
+description: Runs the eGeoffrey Gateway (VerneMQ)
+  information
+dockerhub: egeoffrey/egeoffrey-gateway-vernemq
+github: egeoffrey/egeoffrey-gateway-vernemq
+icon: project-diagram
+manifest_schema: 2
+modules: []
+package: egeoffrey-gateway-vernemq
+revision: 0
+tags: gateway
+version: 1.0
