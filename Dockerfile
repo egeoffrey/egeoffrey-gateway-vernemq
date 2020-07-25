@@ -1,3 +1,3 @@
 FROM vernemq/vernemq
 
-COPY . /vernemq/etc
+COPY --chown=vernemq . /
